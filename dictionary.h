@@ -5,31 +5,17 @@
 #ifndef _DICTIONARY_H_
 #define _DICTIONARY_H_
 
-
-
-/**
- * Implements the dictionary ADT.
- *
- * The implementation is up to you, but you must complete all the given
- *  public functions. You will need to add some member variables and private
- *  helper functions.
- */
 template <class K, class V>
 class Dictionary
 {
 public:
-  /**
-   * Constructor: creates an empty dictionary.
-   */
+
   Dictionary();
 
-  // Destructor for the class.
   ~Dictionary();
 
-  // Copy constructor for the class.
   Dictionary(const Dictionary & other);
 
-  // Assignment operator for the class.
   Dictionary& operator=(const Dictionary & other);
 
   /**
@@ -97,7 +83,7 @@ private:
   size_t rand2;
   size_t rand3;
 
-  // Hash functor that is used in the private hash methods.
+  // Hash functor  
   std::hash<K> hash;
 
   // Determines if the internal arrays should be resized.
